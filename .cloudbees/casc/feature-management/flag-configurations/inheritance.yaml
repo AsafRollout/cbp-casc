@@ -1,0 +1,8 @@
+---
+apiVersion: v1
+kind: Flag.Inheritance
+
+# This is a sub-org on CloudBees platform.
+# You may have inherited Flags, Target Groups, and Properties.
+
+# TODO: What's the point of this file? If we aren't populating it atm with anything other than this warning???

@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Flag.Configuration
+
+flag: UseNewWidgetsProperty
+
+enabled: true
+
+defaultValue: true
+
+# Conditions referencing a Property only:
+conditions:
+  - allOf:
+      - property:
+          name: orgId
+          operands:
+            - aabbcc
+          operator: in-array
+    flagValue: false

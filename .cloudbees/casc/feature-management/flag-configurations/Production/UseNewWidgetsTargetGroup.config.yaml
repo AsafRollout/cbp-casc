@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Flag.Configuration
+
+flag: UseNewWidgetsTargetGroup
+
+enabled: true
+
+defaultValue: true
+
+# Conditions referencing a Target Group only:
+conditions:
+  - allOf:
+      - anyOf:
+          - group:
+              name: BetaUsers
+    flagValue: false

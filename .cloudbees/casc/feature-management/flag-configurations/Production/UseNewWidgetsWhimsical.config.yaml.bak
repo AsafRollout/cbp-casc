@@ -1,0 +1,17 @@
+---
+# I think this file is broken/wrong - its just to illustrate _exactly_ what is in Whimsical.
+apiVersion: v1
+kind: Flag.Configuration
+
+flag: UseNewWidgets
+
+# Conditions per Whimsical spec. (which don't match API conditions schema):
+conditions:
+  - property:
+    propertyConditions:
+      - property: isBetaUser
+        operator: is-true
+      - property: LoggedIn
+        operator: is-true
+    value: true
+value: false

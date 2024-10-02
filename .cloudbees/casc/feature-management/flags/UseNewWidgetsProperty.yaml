@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Flag.Settings
+
+flag: UseNewWidgetsProperty
+description: Should the user see the new widgets? UPDATED5
+labels:
+  - label1
+
+# Note: no need to `variantsEnabled` property as presence of `availableValues` implies it.
+availableValues:
+  - value1
+  - value2
+  - value3
+  - newvalueforflag
