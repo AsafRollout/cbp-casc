@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: flag-configuration
+
+flag: UseNewWidgetsPropertyTargetGroup
+
+enabled: true
+
+defaultValue: true
+
+conditions:
+  - allOf:
+      - anyOf:
+          - group:
+              name: BetaUsers
+      - property:
+          name: userEmail
+          operator: in-array
+          operands:
+              - aabbcc
+    flagValue: false
