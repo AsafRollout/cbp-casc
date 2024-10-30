@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: flag
+
+flag: blop2
+flagType: boolean
+description: testing has perm
+labels:
+  - l3
+  - l1
+  - l2
+
+availableValues:
+
+isPermanent: true
